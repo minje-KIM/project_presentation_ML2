@@ -29,7 +29,7 @@
 #### ▫️ Pose_RNN
 - **입력**: 융합된 피처
 - **역할**: LSTM 기반 6DoF pose 회귀 + 관측 잡음 공분산 행렬 \( R \) 추정
-- **출력**: 6D pose, \( R \in \mathbb{R}^{6 \times 6} \)
+- **출력**: 6D pose, \( R $\in \mathbb{R}^{6 \times 6}$ \)
 
 #### ▫️ DeepVIO
 - **구성**: Encoder + PolicyNet + Pose_RNN
@@ -48,7 +48,7 @@
 #### ▫️ TransitionModel
 - **입력**: 이전 상태 \( x_{t-1} \), IMU(acc + gyro), movement classifier 출력 (soft-label)
 - **구성**: 3개의 movement 유형(left, straight, right)에 대해 개별 분기
-- **출력**: 예측 상태 \( \hat{x}_t \), transition matrix \( A \), noise covariance \( Q \)
+- **출력**: 예측 상태 \( $\hat{x}_t$ \), transition matrix \( A \), noise covariance \( Q \)
 
 #### ▫️ compute_A_Q()
 - **역할**: NN 출력 벡터를 A(6×6), Q(6×6) 행렬로 변환
@@ -63,7 +63,7 @@
 - **프로세스**:
   1. 관측 모델로부터 \( z_t \), \( R_t \) 추정
   2. IMU 기반 movement 분류기로 soft-label 예측
-  3. 전이 모델에서 \( \hat{x}_t \), \( A_t \), \( Q_t \) 예측
+  3. 전이 모델에서 \( $\hat{x}_t$ \), \( A_t \), \( Q_t \) 예측
   4. Kalman Update 수행하여 최종 상태 \( x_t \) 및 공분산 갱신
 
 #### ▫️ kalman_update()
