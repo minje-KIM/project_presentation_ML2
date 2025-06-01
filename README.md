@@ -63,7 +63,7 @@
 - **프로세스**:
   1. 관측 모델로부터 \( z_t \), \( R_t \) 추정
   2. IMU 기반 movement 분류기로 soft-label 예측
-  3. 전이 모델에서 \( \hat{x}_t \), \( A_t \), \( Q_t \) 예측
+  3. 전이 모델에서 \( $\hat{x}_t$ \), \( A_t \), \( Q_t \) 예측
   4. Kalman Update 수행하여 최종 상태 \( x_t \) 및 공분산 갱신
 
 #### ▫️ `kalman_update()`
