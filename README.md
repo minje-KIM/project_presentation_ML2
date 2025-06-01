@@ -1,13 +1,13 @@
 # project_presentation_ML2
 
-## 📁 Code Overview
+##  Code Overview
 
 이 레포지토리는 **Kalman Filter-Inspired Visual-Inertial Odometry** 시스템을 구현한 코드 중 일부분입니다. 
 주요 구성 요소는 다음과 같이 Observation Model과 Kalman Filter-based VIO Model로 나뉘며, 각각 별도의 파일에 정의되어 있습니다.
 
 ---
 
-### 🔹 observation_model.py
+###  observation_model.py
 
 > 시각 이미지 및 IMU 센서를 이용해 **관측값 (observation state)** 및 **관측 잡음 공분산 (R matrix)** 을 예측합니다.
 
@@ -37,7 +37,7 @@
 
 ---
 
-### 🔹 transition_kalman_vio.py
+###  transition_kalman_vio.py
 
 > 논문 구조의 핵심인 **전이 모델(Transition Model)** 과 **Kalman 업데이트 과정**을 포함합니다.
 
