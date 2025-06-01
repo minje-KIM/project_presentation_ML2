@@ -2,7 +2,8 @@
 
 ## 📁 Code Overview
 
-이 레포지토리는 **Kalman Filter-Inspired Visual-Inertial Odometry** 시스템을 구현한 코드입니다. 주요 구성 요소는 다음과 같이 `Observation Model`과 `Kalman Filter-based VIO Model`로 나뉘며, 각각 별도의 파일에 정의되어 있습니다.
+이 레포지토리는 **Kalman Filter-Inspired Visual-Inertial Odometry** 시스템을 구현한 코드 중 일부분입니다. 
+주요 구성 요소는 다음과 같이 `Observation Model`과 `Kalman Filter-based VIO Model`로 나뉘며, 각각 별도의 파일에 정의되어 있습니다.
 
 ---
 
