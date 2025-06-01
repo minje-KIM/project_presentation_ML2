@@ -46,7 +46,7 @@
 - **용도**: Kalman update에서 움직임 여부를 구분하여 처리
 
 #### ▫️ TransitionModel
-- **입력**: 이전 상태 \( x_{t-1} \), IMU(acc + gyro), movement classifier 출력 (soft-label)
+- **입력**: 이전 상태 \( $x_{t-1}$ \), IMU(acc + gyro), movement classifier 출력 (soft-label)
 - **구성**: 3개의 movement 유형(left, straight, right)에 대해 개별 분기
 - **출력**: 예측 상태 \( $\hat{x}_t$ \), transition matrix \( A \), noise covariance \( Q \)
 
